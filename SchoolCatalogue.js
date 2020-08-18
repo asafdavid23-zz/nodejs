@@ -1,5 +1,5 @@
 class School {
-    constructor(name, level, numberOfStrudents) {
+    constructor(name, level, numberOfStudents) {
       this._name = name;
       this._level = level;
     }
@@ -9,11 +9,11 @@ class School {
     get level() {
       return this._level;
     }
-    get numberOfStrudents() {
-      return this._numberOfStrudents;
+    get numberOfStudents() {
+      return this.numberOfStudents;
     }
     quickFacts() {
-      console.log(`${this._name} educates ${this._numberOfStrudents}students at the ${this._level} school level.`)
+      console.log(`${this._name} educates ${this.numberOfStudents}students at the ${this._level} school level.`)
     }
     static pickSubstituteTeacher(substituteTeachers) {
       const index = Math.floor(substituteTeachers.length * Math.random());
